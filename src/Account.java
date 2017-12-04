@@ -26,7 +26,7 @@ public class Account {
         if(amount <= this.account_balance)
             return this.account_balance -= amount;
         else {
-            throw new BankException("The balance is too low compared with the amount trying to be withdrew");
+            throw new BankException("The balance is too low compared to the withdrawn amount.");
         }
     }
 

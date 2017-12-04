@@ -19,4 +19,4 @@ Those who are used in this application are as follows:
 * `\old<expression>` - Identifier which refers to the value of the expression
 
 As an example you can go into the `Account.class` and find the method `withdraw()`. Above that it is specified as 
-an requirement that the `account_balance > amount`. This is to ensure you can withdraw more than you own.
+an requirement that the `account_balance > amount`. This is to ensure you can't withdraw more than you own.
