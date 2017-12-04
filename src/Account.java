@@ -5,7 +5,7 @@ public class Account {
     //@ public invariant account_balance >= 0;
 
     //@ assignable account_balance;
-    //@ ensures account_balance = 0;
+    //@ ensures account_balance == 0;
     public Account() {
         this.account_balance = 0;
     }
@@ -31,6 +31,7 @@ public class Account {
     }
 
     //@ ensures \result == account_balance;
+    //@ pure
     public /*@ pure @*/ double getAccount_balance() {
         return account_balance;
     }
